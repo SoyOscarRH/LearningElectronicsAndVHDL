@@ -1,4 +1,0 @@
-v 3
-file . "AlarmSensor.vhd" "20180207191545.000" "20180207131549.604":
-  entity alarmsensor at 1( 0) + 0 on 25;
-  architecture behave of alarmsensor at 13( 265) + 0 on 26;
