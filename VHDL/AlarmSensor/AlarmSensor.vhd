@@ -1,17 +1,20 @@
 LIBRARY ieee;   
-USE ieee.std_logic_1164.all;    
+USE ieee.STD_LOGIC_1164.all;    
     
 ENTITY AlarmSensor IS     
     PORT (
-        A, B, Reference: in std_logic_vector(2 downto 0);
-        Selector: in std_logic;    
-        Display: out std_logic_vector(6 downto 0)
+        A, B, Reference: in STD_LOGIC_VECTOR(2 DOWNTO 0);
+        Selector: in STD_LOGIC;    
+        Display: out STD_LOGIC_VECTOR(6 DOWNTO 0)
     );
 END AlarmSensor;  
 
 
 ARCHITECTURE Behave OF AlarmSensor IS 
-    SIGNAL SelectorOut, ComparatorOut: std_logic_vector(2 downto 0);
+    SIGNAL SelectorOut, ComparatorOut: STD_LOGIC_VECTOR(2 DOWNTO 0);
+    CONSTANT GreaterSymbol : STD_LOGIC_VECTOR(6 DOWNTO 0) := "1111000";
+    CONSTANT LessSymbol    : STD_LOGIC_VECTOR(6 DOWNTO 0) := "1001110";
+    CONSTANT EqualSymbol   : STD_LOGIC_VECTOR(6 DOWNTO 0) := "1001000";
 BEGIN
 
     -- =========  SELECTOR - MULTIPLEXOR ======= --   
@@ -32,9 +35,9 @@ BEGIN
     END PROCESS;
     
     -- =============  DISPLAY  ============== --   
-    Display <=  "1111000" WHEN ComparatorOut = "100" ELSE
-                "1001110" WHEN ComparatorOut = "001" ELSE
-                "1001000" WHEN ComparatorOut = "010" ELSE
+    Display <=  GreaterSymbol WHEN (ComparatorOut = "100") ELSE
+                LessSymbol    WHEN (ComparatorOut = "001") ELSE
+                EqualSymbol   WHEN (ComparatorOut = "010") ELSE
                 "0000000";
 
 end Behave;
