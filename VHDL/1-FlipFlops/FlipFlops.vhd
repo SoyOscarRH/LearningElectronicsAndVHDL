@@ -1,5 +1,5 @@
 -- ==================================================== --
--- ==============    ALARM SENSOR   =================== --
+-- ==============    FLIP-FLOPS     =================== --
 -- ==================================================== --
 LIBRARY IEEE;   
 USE IEEE.STD_LOGIC_1164.ALL;    
@@ -86,10 +86,10 @@ ARCHITECTURE Behave OF FlipFlops IS
     END PROCESS;
 
     -- ============== MUX ======================== --
-    MuxtiplexorOut <= QofSR WHEN Selector = "00" ELSE
-                      QofJK WHEN Selector = "01" ELSE
-                      QofT  WHEN Selector = "10" ELSE
-                      QofD;
+    MuxtiplexorOut <= QofJK WHEN Selector = "00" ELSE
+                      QofT  WHEN Selector = "01" ELSE
+                      QofD  WHEN Selector = "10" ELSE
+                      QofSR;
 
     -- =============== CODE CONVERTER =============== --
     Display <=  Visual0      WHEN (MuxtiplexorOut = '0') ELSE
