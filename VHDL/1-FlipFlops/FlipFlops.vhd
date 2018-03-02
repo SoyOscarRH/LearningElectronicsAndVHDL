@@ -1,5 +1,5 @@
 -- ==================================================== --
--- ==============    FLIP-FLOPS     =================== --
+-- ==============    FLIP FLOPS     =================== --
 -- ==================================================== --
 LIBRARY IEEE;   
 USE IEEE.STD_LOGIC_1164.ALL;    
@@ -15,21 +15,21 @@ ENTITY FlipFlops IS
 
     ATTRIBUTE PIN_NUMBERS OF FlipFlops : ENTITY IS 
         "CLK:1 "            &  
-        "CLR:2 "            &   
-        "S:3 "              &   
-        "R:4 "              &   
-        "J:5 "              &   
-        "K:6 "              &
+        "J:2 "              &   
+        "K:3 "              &   
+        "T:4 "              &   
+        "S:5 "              &   
+        "R:6 "              &
         "D:7 "              &   
-        "T:8 "              &   
-        "Selector(1):9 "    &   
-        "Selector(0):10 "   & 
-        "Display(0):15 "    &   
-        "Display(1):16 "    &   
-        "Display(2):17 "    &   
-        "Display(3):18 "    &   
-        "Display(4):19 "    &   
-        "Display(5):20 ";  
+        "Selector(0):8 "    &   
+        "Selector(1):9 "    &
+ 	"CLR:13 "           &
+        "Display(0):16 "    &   
+        "Display(1):17 "    &   
+        "Display(2):18 "    &   
+        "Display(3):19 "    &   
+        "Display(4):20 "    &   
+        "Display(5):21 ";  
 END FlipFlops;  
 
 
