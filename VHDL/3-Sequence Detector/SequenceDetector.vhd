@@ -17,13 +17,13 @@ ENTITY DETECTOR IS
         "X:11 "             &
         "CLR:13 "           &
         "AN0:14 "           &
-        "DISPLAY(6):15 "    &   
-        "DISPLAY(5):16 "    &   
-        "DISPLAY(4):17 "    &  
+        "DISPLAY(6):21 "    &   
+        "DISPLAY(5):20 "    &   
+        "DISPLAY(4):19 "    &  
         "DISPLAY(3):18 "    &  
-        "DISPLAY(2):19 "    &  
-        "DISPLAY(1):20 "    &  
-        "DISPLAY(0):21 "; 
+        "DISPLAY(2):17 "    &  
+        "DISPLAY(1):16 "    &  
+        "DISPLAY(0):15 "; 
     END DETECTOR;  
 
 ARCHITECTURE SEQUENCE OF DETECTOR IS 
