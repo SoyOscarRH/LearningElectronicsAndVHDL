@@ -43,9 +43,9 @@ architecture behave of ipn is
             end if;
         end process;
 
-    display <= LetterI when an = q0 else
+    display <= LetterI when an = q2 else
                LetterP when an = q1 else
-               LetterN when an = q2 else
+               LetterN when an = q0 else
                "0000000";
 
 end behave;
