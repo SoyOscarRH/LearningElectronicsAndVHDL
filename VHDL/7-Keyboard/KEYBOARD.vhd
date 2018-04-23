@@ -12,22 +12,22 @@ ENTITY KEYBOARD IS
         DISPLAY: OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
     );
     ATTRIBUTE PIN_NUMBERS OF KEYBOARD : ENTITY IS
-		"CLK:1 "			&
-		"CLR:13 "			&
-    	"ROW(3):8 "			&
-		"ROW(2):9 "			&
-		"ROW(1):10 "		&
-		"ROW(0):11 "		&
-        "DISPLAY(6):15 "   	&   
-        "DISPLAY(5):16 "   	&   
-        "DISPLAY(4):17 "   	&  
- 	    "DISPLAY(3):18 "   	&  
-		"DISPLAY(2):19 "   	&  
-		"DISPLAY(1):20 "   	&  
-		"DISPLAY(0):21 "    &
- 	    "COLUMN(0):23 "     &
-		"COLUMN(1):22 "     &
-		"COLUMN(2):14 ";
+	"CLK:1 "	    &
+	"CLR:13 "	    &
+    	"ROW(3):8 "	    &
+	"ROW(2):9 "	    &
+	"ROW(1):10 "	    &
+	"ROW(0):11 "	    &
+        "DISPLAY(6):15 "    &   
+        "DISPLAY(5):16 "    &   
+        "DISPLAY(4):17 "    &  
+ 	"DISPLAY(3):18 "    &  
+	"DISPLAY(2):19 "    &  
+	"DISPLAY(1):20 "    &  
+	"DISPLAY(0):21 "    &
+ 	"COLUMN(0):23 "     &
+	"COLUMN(1):22 "     &
+	"COLUMN(2):14 ";
 
 END KEYBOARD;  
 
