@@ -12,20 +12,20 @@ ENTITY VISUALIZADOR IS
 	ATTRIBUTE PIN_NUMBERS OF VISUALIZADOR : ENTITY IS
 		"CLK:1   "	    	&
 		"CLR:13  "	    	&
-		"E1(2):5 "			&
-		"E1(1):6 "			&
-		"E1(0):7 "			&
-		"E0(3):8 "			&
-		"E0(2):9 "			&
-		"E0(1):10 "			&
+		"E1(2):5 "		&
+		"E1(1):6 "		&
+		"E1(0):7 "		&
+		"E0(3):8 "		&
+		"E0(2):9 "		&
+		"E0(1):10 "		&
 		"E0(0):11 "     	&
 		"AN(0):14 "     	&
 		"AN(1):23 "     	&
 		"AN(2):22 "     	&
 		"DISPLAY(0):15 "   	&   
-        "DISPLAY(1):16 "   	&   
-        "DISPLAY(2):17 "   	&  
- 	    "DISPLAY(3):18 "   	&  
+        	"DISPLAY(1):16 "   	&   
+       		"DISPLAY(2):17 "   	&  
+ 	    	"DISPLAY(3):18 "   	&  
 		"DISPLAY(4):19 "   	&  
 		"DISPLAY(5):20 "   	&  
 		"DISPLAY(6):21 ";   
