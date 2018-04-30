@@ -7,15 +7,15 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 Entity SensorCounter is
     Port (
             CLK, CLR: in STD_LOGIC;  
-		    UNI: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		    DEC: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	    UNI: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+            DEC: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
             Sensors: in STD_LOGIC_VECTOR(1 downto 0)
     );
 
 	ATTRIBUTE PIN_NUMBERS OF SensorCounter : ENTITY IS
-		"CLK:1          "   &
+		"CLK:1          "   	&
 		"CLR:13         "	&
-    	"Sensors(0):2   "	&
+    		"Sensors(0):2   "	&
 		"Sensors(1):3   "	&
 		"DEC(2):20      "	&
 		"DEC(1):19      "	&
