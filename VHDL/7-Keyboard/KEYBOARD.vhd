@@ -14,10 +14,10 @@ ENTITY KEYBOARD IS
     ATTRIBUTE PIN_NUMBERS OF KEYBOARD : ENTITY IS
 		"CLK:1 "		&
 		"CLR:13 "		&
-    		"ROW(3):8 "		&
-		"ROW(2):9 "		&
-		"ROW(1):10 "		&
-		"ROW(0):11 "		&
+    		"ROW(3):11 "		&
+		"ROW(2):10 "		&
+		"ROW(1):9 "		&
+		"ROW(0):8 "		&
 	        "DISPLAY(6):15 "   	&   
         	"DISPLAY(5):16 "   	&   
         	"DISPLAY(4):17 "   	&  
@@ -25,9 +25,9 @@ ENTITY KEYBOARD IS
 		"DISPLAY(2):19 "   	&  
 		"DISPLAY(1):20 "   	&  
 		"DISPLAY(0):21 "    	&
-	 	"COLUMN(0):23 "     	&
+	 	"COLUMN(0):14 "     	&
 		"COLUMN(1):22 "     	&
-		"COLUMN(2):14 ";
+		"COLUMN(2):23 ";
 END KEYBOARD;  
 
 ARCHITECTURE BEHAVE OF KEYBOARD IS 
