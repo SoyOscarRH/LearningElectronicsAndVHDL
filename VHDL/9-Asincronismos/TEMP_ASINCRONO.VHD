@@ -11,9 +11,9 @@ ENTITY TEMP_ASINCRONO IS
 	);
 
 	ATTRIBUTE PIN_NUMBERS OF TEMP_ASINCRONO : ENTITY IS
-		"CLK:1     "	    &
-		"CLR:13    "	    &
-    	"INPUT:4   "		&
+		"CLK:1     "	    	&
+		"CLR:13    "	        &
+    		"INPUT:4   "		&
 		"DEC(2):20 "		&
 		"DEC(1):19 "		&
 		"DEC(0):18 "		&
