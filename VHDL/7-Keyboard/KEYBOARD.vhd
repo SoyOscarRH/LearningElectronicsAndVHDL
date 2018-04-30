@@ -18,13 +18,13 @@ ENTITY KEYBOARD IS
 		"ROW(2):10 "		&
 		"ROW(1):9 "		&
 		"ROW(0):8 "		&
-	        "DISPLAY(6):15 "   	&   
-        	"DISPLAY(5):16 "   	&   
-        	"DISPLAY(4):17 "   	&  
+	        "DISPLAY(0):15 "   	&   
+        	"DISPLAY(1):16 "   	&   
+        	"DISPLAY(2):17 "   	&  
  	    	"DISPLAY(3):18 "   	&  
-		"DISPLAY(2):19 "   	&  
-		"DISPLAY(1):20 "   	&  
-		"DISPLAY(0):21 "    	&
+		"DISPLAY(4):19 "   	&  
+		"DISPLAY(5):20 "   	&  
+		"DISPLAY(6):21 "    	&
 	 	"COLUMN(0):14 "     	&
 		"COLUMN(1):22 "     	&
 		"COLUMN(2):23 ";
