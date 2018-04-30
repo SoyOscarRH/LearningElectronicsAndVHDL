@@ -37,122 +37,122 @@ Architecture Behave of SensorCounter is
                     When q0 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="00";
+				NextState <= q0;
+				CounterPeople <="00";
                             When "01" => 
-								NextState <= q4;
-								CounterPeople <="00";
+				NextState <= q4;
+				CounterPeople <="00";
                             When "10" => 
-								NextState <= q1;
-								CounterPeople <="00";
+				NextState <= q1;
+				CounterPeople <="00";
                             When OTHERS => 
-								NextState <= q7;
-								CounterPeople <="00";
+				NextState <= q7;
+				CounterPeople <="00";
                         End Case;
-					When q1 => 
+		    When q1 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="00";
+				NextState <= q0;
+				CounterPeople <="00";
                             When "01" => 
-								NextState <= q4;
-								CounterPeople <="00";
+				NextState <= q4;
+				CounterPeople <="00";
                             When "10" => 
-								NextState <= q1;
-								CounterPeople <="00";
+				NextState <= q1;
+				CounterPeople <="00";
                             When OTHERS => 
-								NextState <= q2;
-								CounterPeople <="00";
+				NextState <= q2;
+				CounterPeople <="00";
                         End Case;
-					When q2 => 
+		    When q2 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="00";
+				NextState <= q0;
+				CounterPeople <="00";
                             When "01" => 
-								NextState <= q3;
-								CounterPeople <="00";
+				NextState <= q3;
+				CounterPeople <="00";
                             When "10" => 
-								NextState <= q1;
-								CounterPeople <="00";
+				NextState <= q1;
+				CounterPeople <="00";
                             When OTHERS => 
-								NextState <= q2;
-								CounterPeople <="00";
+				NextState <= q2;
+				CounterPeople <="00";
                         End Case;
-					When q3 => 
+		   When q3 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="01";
+				NextState <= q0;
+				CounterPeople <="01";
                             When "01" => 
-								NextState <= q3;
-								CounterPeople <="00";
+				NextState <= q3;
+				CounterPeople <="00";
                             When "10" => 
-								NextState <= q1;
-								CounterPeople <="01";
+				NextState <= q1;
+				CounterPeople <="01";
                             When OTHERS => 
-								NextState <= q2;
-								CounterPeople <="00";
+				NextState <= q2;
+				CounterPeople <="00";
                         End Case;
-					 When q4 => 
+		   When q4 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="00";
+				NextState <= q0;
+				CounterPeople <="00";
                             When "01" => 
-								NextState <= q4;
-								CounterPeople <="00";
+				NextState <= q4;
+				CounterPeople <="00";
                             When "10" => 
-								NextState <= q1;
-								CounterPeople <="00";
+				NextState <= q1;
+				CounterPeople <="00";
                             When OTHERS => 
-								NextState <= q5;
-								CounterPeople <="00";
+				NextState <= q5;
+				CounterPeople <="00";
                         End Case;
-					 When q5 => 
+		   When q5 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="00";
+				NextState <= q0;
+				CounterPeople <="00";
                             When "01" => 
-								NextState <= q4;
-								CounterPeople <="00";
+				NextState <= q4;
+				CounterPeople <="00";
                             When "10" => 
-								NextState <= q6;
-								CounterPeople <="00";
+				NextState <= q6;
+				CounterPeople <="00";
                             When OTHERS => 
-								NextState <= q5;
-								CounterPeople <="00";
+				NextState <= q5;
+				CounterPeople <="00";
                         End Case;
-					 When q6 => 
+		   When q6 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="10";
+				NextState <= q0;
+				CounterPeople <="10";
                             When "01" => 
-								NextState <= q4;
-								CounterPeople <="10";
+				NextState <= q4;
+				CounterPeople <="10";
                             When "10" => 
-								NextState <= q6;
-								CounterPeople <="00";
+				NextState <= q6;
+				CounterPeople <="00";
                             When OTHERS => 
-								NextState <= q5;
-								CounterPeople <="00";
+				NextState <= q5;
+				CounterPeople <="00";
                         End Case;
-					 When q7 => 
+		   When q7 => 
                         Case Sensors is
                             When "00" => 
-								NextState <= q0;
-								CounterPeople <="00";
+				NextState <= q0;
+				CounterPeople <="00";
                             When "01" => 
-								NextState <= q4;
-								CounterPeople <="00";
+				NextState <= q4;
+				CounterPeople <="00";
                             When "10" => 
-								NextState <= q1;
-								CounterPeople <="00";
+				NextState <= q1;
+				CounterPeople <="00";
                             When OTHERS => 
-								NextState <= q7;
-								CounterPeople <="00";
+				NextState <= q7;
+			        CounterPeople <="00";
                         End Case;
                 End Case;
             End Process FiniteStateMachine;
