@@ -24,7 +24,8 @@ ENTITY DETECTOR IS
         "DISPLAY(2):17 "    &  
         "DISPLAY(1):16 "    &  
         "DISPLAY(0):15 "; 
-    END DETECTOR;  
+
+END DETECTOR;  
 
 ARCHITECTURE SEQUENCE OF DETECTOR IS 
     CONSTANT SuccessSymbol : STD_LOGIC_VECTOR(6 DOWNTO 0):= "0001000";
@@ -32,7 +33,8 @@ ARCHITECTURE SEQUENCE OF DETECTOR IS
     SIGNAL QA, QB, Y : STD_LOGIC;
     BEGIN
         AN0 <= '0';
-        PROC : PROCESS(CLK, CLR)
+
+        PROC: PROCESS(CLK, CLR)
         BEGIN
             IF(CLR = '1') THEN
                 QA <= '0';
@@ -42,8 +44,9 @@ ARCHITECTURE SEQUENCE OF DETECTOR IS
                 QB <= (QA AND X) OR (QA AND QB);
             END IF;
         END PROCESS PROC;
+
         Y <= (NOT QA AND QB AND X);
-        DISPLAY <= SuccessSymbol WHEN Y = '1' ELSE
-                   BugSymbol;
+        DISPLAY <= SuccessSymbol WHEN Y = '1' 
+                    ELSE BugSymbol;
 
 END SEQUENCE;
