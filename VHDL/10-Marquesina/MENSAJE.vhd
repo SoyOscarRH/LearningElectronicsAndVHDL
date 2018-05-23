@@ -9,7 +9,7 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 ENTITY MENSAJE IS     
     PORT (
 		CLK,CLR: IN STD_LOGIC;
-        DIRECCION: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+       		 DIRECCION: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
 		DISPLAY: OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 		AN: INOUT STD_LOGIC_VECTOR(2 DOWNTO 0)
     );
@@ -41,7 +41,7 @@ CONSTANT Symboln : STD_LOGIC_VECTOR(6 DOWNTO 0) := "0101010";
 CONSTANT SymbolO : STD_LOGIC_VECTOR(6 DOWNTO 0) := "0000001"; 
 CONSTANT Symboles : STD_LOGIC_VECTOR(6 DOWNTO 0) := "1110111"; 
 TYPE MEMORIA IS ARRAY(7 DOWNTO 0) OF STD_LOGIC_VECTOR (6 DOWNTO 0);
-CONSTANT ROM2 : MEMORIA := ( Symboles, Symboln, SymbolE, SymbolS, SymbolI, Symbold, Symbole, Symboles );
+CONSTANT ROM2 : MEMORIA := ( SymbolO, Symboln, SymbolE, SymbolS, SymbolI, Symbold, Symbole, Symboles );
 CONSTANT ROM1 : MEMORIA := ( Symboles, SymbolO, Symboln, SymbolE, SymbolS, SymbolI, Symbold, Symboles );
 CONSTANT ROM0 : MEMORIA := ( Symboles, Symboles, SymbolO, Symboln, SymbolE, SymbolS, SymbolI, Symbold );
 SIGNAL DISP2: STD_LOGIC_VECTOR(6 DOWNTO 0);
