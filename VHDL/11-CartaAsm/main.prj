@@ -1,0 +1,3 @@
+vhdl work "paquete.vhd"
+vhdl work "contador.vhd"
+vhdl work "main.vhd"
