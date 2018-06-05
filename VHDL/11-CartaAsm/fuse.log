@@ -1,0 +1,33 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/xilinx/practica12/simulacion_isim_beh.exe -prj /home/ise/xilinx/practica12/simulacion_beh.prj work.simulacion 
+ISim P.20160913 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/xilinx/practica12/registro.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx/practica12/paquete.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx/practica12/fsm.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx/practica12/convertidor.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx/practica12/contador.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx/practica12/main.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx/practica12/simulacion.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96828 KB
+Fuse CPU Usage: 970 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package paquete
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity registro [registro_default]
+Compiling architecture behavioral of entity contador [contador_default]
+Compiling architecture behavioral of entity convertidor [convertidor_default]
+Compiling architecture behavioral of entity fsm [fsm_default]
+Compiling architecture behavioral of entity main [main_default]
+Compiling architecture behavior of entity simulacion
+Time Resolution for simulation is 1ps.
+Compiled 16 VHDL Units
+Built simulation executable /home/ise/xilinx/practica12/simulacion_isim_beh.exe
+Fuse Memory Usage: 114124 KB
+Fuse CPU Usage: 1070 ms
+GCC CPU Usage: 330 ms

@@ -5,8 +5,6 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 main.ngc main.ngd
 
 Reading NGO file "/home/ise/xilinx/practica12/main.ngc" ...
-Loading design module "/home/ise/xilinx/practica12/main.ngc"...
-WARNING:NgdBuild:578 - Design contains no instances.
 Gathering constraint information from source properties...
 Done.
 
@@ -25,12 +23,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:   0
 
-Total memory usage is 495568 kilobytes
+Total memory usage is 495516 kilobytes
 
 Writing NGD file "main.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
+Total REAL time to NGDBUILD completion:  2 sec
 Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "main.bld"...

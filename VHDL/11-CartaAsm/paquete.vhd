@@ -25,7 +25,7 @@ package paquete is
 		 Port ( clk : in  STD_LOGIC;
 				  clr : in  STD_LOGIC;
 				  D : in  STD_LOGIC_VECTOR (3 downto 0);
-				  Q : out  STD_LOGIC_VECTOR (3 downto 0);
+				  Q : inout  STD_LOGIC_VECTOR (3 downto 0);
 				  UP : in  STD_LOGIC;
 				  L : in  STD_LOGIC);
 	end component;

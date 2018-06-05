@@ -1,0 +1,7 @@
+vhdl isim_temp "registro.vhd"
+vhdl isim_temp "paquete.vhd"
+vhdl isim_temp "fsm.vhd"
+vhdl isim_temp "convertidor.vhd"
+vhdl isim_temp "contador.vhd"
+vhdl isim_temp "main.vhd"
+vhdl isim_temp "simulacion.vhd"

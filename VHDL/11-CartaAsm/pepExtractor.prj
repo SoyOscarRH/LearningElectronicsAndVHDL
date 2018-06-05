@@ -1,0 +1,6 @@
+work	"contador.vhd"
+work	"convertidor.vhd"
+work	"fsm.vhd"
+work	"main.vhd"
+work	"paquete.vhd"
+work	"registro.vhd"

@@ -69,7 +69,7 @@ begin
 					if A0 = '0' then
 						siguiente <= b;
 					else
-						EB <= '1';
+						UP <= '1';
 						siguiente <= b;
 					end if;
 				else

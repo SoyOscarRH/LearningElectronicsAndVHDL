@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/xilinx/practica12/simulacion_isim_beh.exe" -prj "/home/ise/xilinx/practica12/simulacion_beh.prj" "work.simulacion" 

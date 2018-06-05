@@ -40,9 +40,10 @@ entity main is
 end main;
 
 architecture Behavioral of main is
-signal SHE, LA, UP, LB : std_logic;
+signal SHE, LA, UP, LB, SEL, Z : std_logic;
 signal QA : std_logic_vector(7 downto 0);
 signal QB : std_logic_vector(3 downto 0);
+signal S  : std_logic_vector(6 downto 0);
 
 begin
 	reg : registro port map(
@@ -62,6 +63,31 @@ begin
 		UP => UP,
 		L => LB
 	);
+	
+	conv : convertidor port map(
+		clk => clk,
+		clr => clr,
+		Q => QB,
+		S => S
+	);
+	
+	control : fsm port map(
+		clk => clk,
+		clr => clr,
+		INI => INI,
+		A0 => QA(0),
+		Z => Z,
+		SHE => SHE,
+		LA => LA,
+		UP => UP,
+		LB => LB,
+		SEL => SEL
+	);
+	
+	Z <= not(QA(0) or QA(1) or QA(2) or QA(3) or QA(4) or QA(5) or QA(6) or QA(7));
+	
+	DISPLAY <= S when SEL = '1' else
+				  "1111110";
 
 end Behavioral;
 
