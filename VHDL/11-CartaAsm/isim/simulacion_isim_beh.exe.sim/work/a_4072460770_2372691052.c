@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/ise/xilinx/practica12/simulacion.vhd";
+static const char *ng0 = "/media/sf_Share/practica12/simulacion.vhd";
 
 
 
@@ -113,7 +113,7 @@ LAB0:    t1 = (t0 + 3192U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(90, ng0);
-    t2 = (t0 + 5640);
+    t2 = (t0 + 5624);
     t4 = (t0 + 3640);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);

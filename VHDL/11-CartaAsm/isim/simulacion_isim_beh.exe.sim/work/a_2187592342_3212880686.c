@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/ise/xilinx/practica12/contador.vhd";
+static const char *ng0 = "/media/sf_Share/practica12/contador.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -125,7 +125,7 @@ LAB7:    xsi_set_current_line(52, ng0);
 LAB10:    xsi_set_current_line(55, ng0);
     t1 = (t0 + 1512U);
     t5 = *((char **)t1);
-    t1 = (t0 + 5064U);
+    t1 = (t0 + 5056U);
     t6 = ieee_p_3620187407_sub_2255506239096166994_3965413181(IEEE_P_3620187407, t12, t5, t1, 1);
     t7 = (t12 + 12U);
     t13 = *((unsigned int *)t7);

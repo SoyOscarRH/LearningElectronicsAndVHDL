@@ -108,22 +108,22 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/ise/xilinx/practica12/registro.vhd" into library work
+Parsing VHDL file "/media/sf_Share/practica12/registro.vhd" into library work
 Parsing entity <registro>.
 Parsing architecture <Behavioral> of entity <registro>.
-Parsing VHDL file "/home/ise/xilinx/practica12/paquete.vhd" into library work
+Parsing VHDL file "/media/sf_Share/practica12/paquete.vhd" into library work
 Parsing package <paquete>.
 Parsing package body <paquete>.
-Parsing VHDL file "/home/ise/xilinx/practica12/fsm.vhd" into library work
+Parsing VHDL file "/media/sf_Share/practica12/fsm.vhd" into library work
 Parsing entity <fsm>.
 Parsing architecture <Behavioral> of entity <fsm>.
-Parsing VHDL file "/home/ise/xilinx/practica12/convertidor.vhd" into library work
+Parsing VHDL file "/media/sf_Share/practica12/convertidor.vhd" into library work
 Parsing entity <convertidor>.
 Parsing architecture <Behavioral> of entity <convertidor>.
-Parsing VHDL file "/home/ise/xilinx/practica12/contador.vhd" into library work
+Parsing VHDL file "/media/sf_Share/practica12/contador.vhd" into library work
 Parsing entity <contador>.
 Parsing architecture <Behavioral> of entity <contador>.
-Parsing VHDL file "/home/ise/xilinx/practica12/main.vhd" into library work
+Parsing VHDL file "/media/sf_Share/practica12/main.vhd" into library work
 Parsing entity <main>.
 Parsing architecture <Behavioral> of entity <main>.
 
@@ -146,13 +146,15 @@ Elaborating entity <fsm> (architecture <Behavioral>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <main>.
-    Related source file is "/home/ise/xilinx/practica12/main.vhd".
+    Related source file is "/media/sf_Share/practica12/main.vhd".
+    Found 4-bit register for signal <AN>.
     Summary:
+	inferred   4 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
 Unit <main> synthesized.
 
 Synthesizing Unit <registro>.
-    Related source file is "/home/ise/xilinx/practica12/registro.vhd".
+    Related source file is "/media/sf_Share/practica12/registro.vhd".
     Found 8-bit register for signal <Q>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -160,7 +162,7 @@ Synthesizing Unit <registro>.
 Unit <registro> synthesized.
 
 Synthesizing Unit <contador>.
-    Related source file is "/home/ise/xilinx/practica12/contador.vhd".
+    Related source file is "/media/sf_Share/practica12/contador.vhd".
     Found 4-bit register for signal <Q>.
     Found 4-bit adder for signal <Q[3]_GND_8_o_add_0_OUT> created at line 55.
     Summary:
@@ -170,7 +172,7 @@ Synthesizing Unit <contador>.
 Unit <contador> synthesized.
 
 Synthesizing Unit <convertidor>.
-    Related source file is "/home/ise/xilinx/practica12/convertidor.vhd".
+    Related source file is "/media/sf_Share/practica12/convertidor.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16x7-bit Read Only RAM for signal <S>
@@ -179,7 +181,7 @@ WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and lef
 Unit <convertidor> synthesized.
 
 Synthesizing Unit <fsm>.
-    Related source file is "/home/ise/xilinx/practica12/fsm.vhd".
+    Related source file is "/media/sf_Share/practica12/fsm.vhd".
     Found 2-bit register for signal <actual>.
     Found finite state machine <FSM_0> for signal <actual>.
     -----------------------------------------------------------------------
@@ -208,8 +210,8 @@ Macro Statistics
  16x7-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 1
  4-bit adder                                           : 1
-# Registers                                            : 2
- 4-bit register                                        : 1
+# Registers                                            : 3
+ 4-bit register                                        : 2
  8-bit register                                        : 1
 # Multiplexers                                         : 6
  1-bit 2-to-1 multiplexer                              : 3
@@ -251,8 +253,8 @@ Macro Statistics
  16x7-bit single-port distributed Read Only RAM        : 1
 # Counters                                             : 1
  4-bit up counter                                      : 1
-# Registers                                            : 8
- Flip-Flops                                            : 8
+# Registers                                            : 12
+ Flip-Flops                                            : 12
 # Multiplexers                                         : 12
  1-bit 2-to-1 multiplexer                              : 11
  7-bit 2-to-1 multiplexer                              : 1
@@ -287,8 +289,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 14
- Flip-Flops                                            : 14
+# Registers                                            : 18
+ Flip-Flops                                            : 18
 
 =========================================================================
 
@@ -317,14 +319,15 @@ Primitive and Black Box Usage:
 #      LUT4                        : 1
 #      LUT5                        : 9
 #      LUT6                        : 9
-# FlipFlops/Latches                : 14
-#      FDC                         : 10
+# FlipFlops/Latches                : 18
+#      FDC                         : 11
 #      FDCE                        : 4
+#      FDP                         : 3
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 17
+# IO Buffers                       : 29
 #      IBUF                        : 10
-#      OBUF                        : 7
+#      OBUF                        : 19
 
 Device utilization summary:
 ---------------------------
@@ -333,20 +336,20 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              14  out of  18224     0%  
+ Number of Slice Registers:              18  out of  18224     0%  
  Number of Slice LUTs:                   23  out of   9112     0%  
     Number used as Logic:                23  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     23
-   Number with an unused Flip Flop:       9  out of     23    39%  
-   Number with an unused LUT:             0  out of     23     0%  
-   Number of fully used LUT-FF pairs:    14  out of     23    60%  
+ Number of LUT Flip Flop pairs used:     25
+   Number with an unused Flip Flop:       7  out of     25    28%  
+   Number with an unused LUT:             2  out of     25     8%  
+   Number of fully used LUT-FF pairs:    16  out of     25    64%  
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          18
- Number of bonded IOBs:                  18  out of    232     7%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    232    12%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -372,7 +375,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 14    |
+clk                                | BUFGP                  | 18    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -395,7 +398,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 3.143ns (frequency: 318.167MHz)
-  Total number of paths / destination ports: 69 / 18
+  Total number of paths / destination ports: 73 / 22
 -------------------------------------------------------------------------
 Delay:               3.143ns (Levels of Logic = 1)
   Source:            control/actual_FSM_FFd2 (FF)
@@ -416,7 +419,7 @@ Delay:               3.143ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 32 / 24
+  Total number of paths / destination ports: 36 / 28
 -------------------------------------------------------------------------
 Offset:              3.119ns (Levels of Logic = 2)
   Source:            INI (PAD)
@@ -436,7 +439,7 @@ Offset:              3.119ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 35 / 7
+  Total number of paths / destination ports: 47 / 19
 -------------------------------------------------------------------------
 Offset:              6.037ns (Levels of Logic = 2)
   Source:            control/actual_FSM_FFd1 (FF)
@@ -470,13 +473,13 @@ clk            |    3.143|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 3.86 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 7.79 secs
  
 --> 
 
 
-Total memory usage is 482768 kilobytes
+Total memory usage is 482912 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

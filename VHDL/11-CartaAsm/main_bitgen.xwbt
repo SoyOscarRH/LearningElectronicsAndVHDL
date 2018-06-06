@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/sf_Share/practica12/main.ncd
+OUTFILE=/media/sf_Share/practica12/main.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=/media/sf_Share/practica12
+LICENSE=WebPack
+USER_INFO=__0_0_0

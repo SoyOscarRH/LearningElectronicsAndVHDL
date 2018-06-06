@@ -36,12 +36,13 @@ entity main is
            clr : in  STD_LOGIC;
            INI : in  STD_LOGIC;
            A : in  STD_LOGIC_VECTOR (7 downto 0);
+			  QA : inout std_logic_vector(7 downto 0);
+			  AN : inout STD_LOGIC_VECTOR (3 downto 0);
            DISPLAY : out  STD_LOGIC_VECTOR (6 downto 0));
 end main;
 
 architecture Behavioral of main is
 signal SHE, LA, UP, LB, SEL, Z : std_logic;
-signal QA : std_logic_vector(7 downto 0);
 signal QB : std_logic_vector(3 downto 0);
 signal S  : std_logic_vector(6 downto 0);
 
@@ -88,6 +89,15 @@ begin
 	
 	DISPLAY <= S when SEL = '1' else
 				  "1111110";
+				  
+	ring : process(clk, clr)
+	begin
+		if clr = '1' then
+			an <= "1110";
+		elsif rising_edge(clk) then
+			an <= to_stdlogicvector(to_bitvector(an) rol 1);
+		end if;
+	end process ring;
 
 end Behavioral;
 

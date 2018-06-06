@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/ise/xilinx/practica12/convertidor.vhd";
+static const char *ng0 = "/media/sf_Share/practica12/convertidor.vhd";
 extern char *IEEE_P_3620187407;
 
 int ieee_p_3620187407_sub_5109402382352621412_3965413181(char *, char *, char *);
@@ -51,7 +51,7 @@ LAB3:    t1 = (t0 + 1808U);
     t2 = *((char **)t1);
     t1 = (t0 + 1352U);
     t3 = *((char **)t1);
-    t1 = (t0 + 5160U);
+    t1 = (t0 + 5152U);
     t4 = ieee_p_3620187407_sub_5109402382352621412_3965413181(IEEE_P_3620187407, t3, t1);
     t5 = (t4 - 0);
     t6 = (t5 * 1);

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-06-04T23:17:24</DateModified>
+  <DateModified>2018-06-06T18:00:05</DateModified>
   <ModuleName>main</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/xilinx/practica12/iseconfig/main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/xilinx/practica12</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-06-06T17:37:21</SummaryTimeStamp>
+  <SavedFilePath>/media/sf_Share/practica12/iseconfig/main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_Share/practica12/</ImplementationReportsDirectory>
   <DateInitialized>2018-06-04T23:17:23</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
