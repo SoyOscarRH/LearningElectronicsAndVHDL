@@ -89,15 +89,8 @@ begin
 	
 	DISPLAY <= S when SEL = '1' else
 				  "1111110";
-				  
-	ring : process(clk, clr)
-	begin
-		if clr = '1' then
-			an <= "1110";
-		elsif rising_edge(clk) then
-			an <= to_stdlogicvector(to_bitvector(an) rol 1);
-		end if;
-	end process ring;
+	
+	an <= "1110";
 
 end Behavioral;
 
